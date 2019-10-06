@@ -1,0 +1,34 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 190px 330px 670px 1fr;
+  grid-template-rows: 50px;
+  height: 100vh;
+  width: 100vw;
+  background-color: #001c37;
+  background-image: url("../images/headerBg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header > #nav > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header > #logo > #main {
+  color: #fde428;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+header > #logo > #sub {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
