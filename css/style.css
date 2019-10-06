@@ -64,8 +64,32 @@ header > #ring {
   grid-row: 3 / span 1;
   align-self: center;
   justify-self: end;
+  position: relative;
+}
+header > #ring > #main {
+  position: absolute;
+  top: 78px;
+  text-align: right;
+  left: -200px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 51px;
+  font-weight: 700;
 }
 
+header > #ring > #sub {
+  position: absolute;
+  top: 270px;
+  text-align: right;
+  left: -71px;
+  font-family: "Montserrat", sans-serif;
+  color: #fde428;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 2px #fde428 solid;
+  line-height: 26px;
+}
 /*header > #selectLang > label {*/
 /*  background-image: url(../images/english.png);*/
 /*}*/
