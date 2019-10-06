@@ -1,20 +1,46 @@
 header {
   display: grid;
-  grid-template-columns: 1fr 190px 330px 670px 1fr;
-  grid-template-rows: 50px;
+  grid-template-columns: 1fr 180px 0.88fr 590px 45px 1fr;
+  grid-template-rows: 50px 75px 1fr;
   height: 100vh;
   width: 100vw;
   background-color: #001c37;
-  background-image: url("../images/headerBg.png");
+  background-image: url(../images/headerBg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
+header > #emptyTop {
+  grid-column: 1/7;
+  grid-row: 1 / span 1;
+}
 header > #nav > ul {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 18px;
+  flex-wrap: nowrap;
+}
+
+header > #nav > ul > li {
+  flex: 1;
+  padding-right: 40px;
+  min-width: auto;
+  flex-basis: auto;
+  display: inline-block;
+}
+
+header > #nav > ul > li#right {
+  padding-right: 0;
+}
+
+header > #nav > ul > li > a {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.56px;
 }
 
 header > #logo > #main {
@@ -30,5 +56,16 @@ header > #logo > #sub {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 3.6px;
+  letter-spacing: 3.1px;
 }
+
+header > #ring {
+  grid-column: 4/6;
+  grid-row: 3 / span 1;
+  align-self: center;
+  justify-self: end;
+}
+
+/*header > #selectLang > label {*/
+/*  background-image: url(../images/english.png);*/
+/*}*/
